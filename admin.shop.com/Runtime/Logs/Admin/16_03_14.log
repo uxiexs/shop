@@ -1,0 +1,33 @@
+[ 2016-03-14T11:10:01+08:00 ] 192.168.1.132 /member
+ERR: 无法加载控制器:Member
+
+[ 2016-03-14T11:10:43+08:00 ] 192.168.1.132 /index.php/member
+ERR: 无法加载控制器:Member
+
+[ 2016-03-14T11:11:27+08:00 ] 192.168.1.132 /index.php/Goods/
+ERR: 非法操作:index.php
+
+[ 2016-03-14T11:48:17+08:00 ] 192.168.1.132 /index.php/Goods/changeStatus/id/1/status/0.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /home/www/admin.shop.com/Application/Admin/Model/GoodsModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /home/www/admin.shop.com/Application/Admin/Model/GoodsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0018s ]
+SQL: UPDATE `goods` SET `status`='0' WHERE `id` IN ('1') [ RunTime:0.0071s ]
+
+[ 2016-03-14T11:48:20+08:00 ] 192.168.1.132 /index.php/Goods/changeStatus/id/1/status/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /home/www/admin.shop.com/Application/Admin/Model/GoodsModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /home/www/admin.shop.com/Application/Admin/Model/GoodsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0020s ]
+SQL: UPDATE `goods` SET `status`='1' WHERE `id` IN ('1') [ RunTime:0.0040s ]
+
+[ 2016-03-14T11:48:26+08:00 ] 192.168.1.132 /index.php/Goods/
+ERR: 非法操作:index.php
+
+[ 2016-03-14T16:17:07+08:00 ] 192.168.1.122 /index.php/Goods/
+ERR: 非法操作:index.php
+
