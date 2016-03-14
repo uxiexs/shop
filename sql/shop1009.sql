@@ -1,5 +1,6 @@
 使用数据库的前提:
-mysql -uroot -padmin
+
+mysql -uroot -p123456
 
 create database shop1009 default charset utf8;
 
